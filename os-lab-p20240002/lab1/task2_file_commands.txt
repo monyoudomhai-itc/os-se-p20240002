@@ -1,0 +1,14 @@
+a.txt
+b.txt
+task2_file_commands.txt
+a_copy.txt
+a.txt
+b.txt
+task2_file_commands.txt
+a_copy.txt
+a.txt
+b_rename.txt
+task2_file_commands.txt
+a.txt
+b_rename.txt
+task2_file_commands.txt
