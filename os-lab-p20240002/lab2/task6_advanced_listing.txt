@@ -1,0 +1,255 @@
+=== Task 6 : Advanced Listing & Directory Audit ==
+--- Recursive Listing (ls -R) ---
+techcorp:
+engineering
+hr
+marketing
+
+techcorp/engineering:
+backend
+devops
+frontend
+
+techcorp/engineering/backend:
+app.js
+database.sql
+pipeline.txt
+server_config.txt
+
+techcorp/engineering/devops:
+docker-compose.yml
+Dockerfile
+pipeline.txt
+security_audit.txt
+server_notice.txt
+
+techcorp/engineering/frontend:
+frontend_config.txt
+index.html
+styles.css
+
+techcorp/hr:
+onboarding
+policies
+
+techcorp/hr/onboarding:
+checklist.txt
+handbook.txt
+leave_policy.txt
+welcome_guide.txt
+
+techcorp/hr/policies:
+leave_policy.txt
+remote_work.txt
+
+techcorp/marketing:
+assets
+campaigns
+
+techcorp/marketing/assets:
+banner.jpg
+brochure.pdf
+logo_brief.txt
+logo.png
+
+techcorp/marketing/campaigns:
+q1_2026_launch.txt
+social_media.txt
+
+--- Sort by Size: engineering/ (ls -LS) ---
+total 1
+-rwxrwxrwx 1 monyoudom monyoudom 26 Mar 17 14:47 frontend_config.txt
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:47 index.html
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:47 styles.css
+total 1
+-rwxrwxrwx 1 monyoudom monyoudom 29 Mar 17 16:30 pipeline.txt
+-rwxrwxrwx 1 monyoudom monyoudom 29 Mar 17 14:48 server_config.txt
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 app.js
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 database.sql
+total 2
+-rwxrwxrwx 1 monyoudom monyoudom 48 Mar 17 15:44 server_notice.txt
+-rwxrwxrwx 1 monyoudom monyoudom 34 Mar 17 16:17 security_audit.txt
+-rwxrwxrwx 1 monyoudom monyoudom 29 Mar 17 14:48 pipeline.txt
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 docker-compose.yml
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 Dockerfile
+
+--- Sort by Time: techcorp/ (ls -lt) ---
+total 1
+-rwxrwxrwx 1 monyoudom monyoudom 32 Mar 17 14:46 remote_work.txt
+-rwxrwxrwx 1 monyoudom monyoudom 39 Mar 17 14:46 leave_policy.txt
+total 2
+-rwxrwxrwx 1 monyoudom monyoudom 39 Mar 17 16:06 leave_policy.txt
+-rwxrwxrwx 1 monyoudom monyoudom 23 Mar 17 15:44 handbook.txt
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:47 checklist.txt
+-rwxrwxrwx 1 monyoudom monyoudom 52 Mar 17 14:47 welcome_guide.txt
+total 1
+-rwxrwxrwx 1 monyoudom monyoudom 35 Mar 17 14:48 social_media.txt
+-rwxrwxrwx 1 monyoudom monyoudom 32 Mar 17 14:48 q1_2026_launch.txt
+
+--- Human-Readable (ls -lh) ---
+total 512
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 banner.jpg
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 brochure.pdf
+-rwxrwxrwx 1 monyoudom monyoudom 22 Mar 17 15:44 logo_brief.txt
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 logo.png
+total 1.5K
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 docker-compose.yml
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 Dockerfile
+-rwxrwxrwx 1 monyoudom monyoudom 29 Mar 17 14:48 pipeline.txt
+-rwxrwxrwx 1 monyoudom monyoudom 34 Mar 17 16:17 security_audit.txt
+-rwxrwxrwx 1 monyoudom monyoudom 48 Mar 17 15:44 server_notice.txt
+
+--- Reverse Sort by Size (ls -rlS) ---
+total 1
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 database.sql
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 app.js
+-rwxrwxrwx 1 monyoudom monyoudom 29 Mar 17 14:48 server_config.txt
+-rwxrwxrwx 1 monyoudom monyoudom 29 Mar 17 16:30 pipeline.txt
+
+--- Reverse Sort by Time (ls -rlt) ---
+total 2
+-rwxrwxrwx 1 monyoudom monyoudom 52 Mar 17 14:47 welcome_guide.txt
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:47 checklist.txt
+-rwxrwxrwx 1 monyoudom monyoudom 23 Mar 17 15:44 handbook.txt
+-rwxrwxrwx 1 monyoudom monyoudom 39 Mar 17 16:06 leave_policy.txt
+
+--- Combined: Recursive + Human-Readable + Sort by Size (ls -lhRS) ---
+techcorp/:
+total 0
+drwxrwxrwx 1 monyoudom monyoudom 0 Mar 17 14:46 engineering
+drwxrwxrwx 1 monyoudom monyoudom 0 Mar 17 14:46 hr
+drwxrwxrwx 1 monyoudom monyoudom 0 Mar 17 15:45 marketing
+
+techcorp/engineering:
+total 4.0K
+drwxrwxrwx 1 monyoudom monyoudom 4.0K Mar 17 16:25 devops
+drwxrwxrwx 1 monyoudom monyoudom    0 Mar 17 16:30 backend
+drwxrwxrwx 1 monyoudom monyoudom    0 Mar 17 16:42 frontend
+
+techcorp/engineering/devops:
+total 1.5K
+-rwxrwxrwx 1 monyoudom monyoudom 48 Mar 17 15:44 server_notice.txt
+-rwxrwxrwx 1 monyoudom monyoudom 34 Mar 17 16:17 security_audit.txt
+-rwxrwxrwx 1 monyoudom monyoudom 29 Mar 17 14:48 pipeline.txt
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 docker-compose.yml
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 Dockerfile
+
+techcorp/engineering/backend:
+total 1.0K
+-rwxrwxrwx 1 monyoudom monyoudom 29 Mar 17 16:30 pipeline.txt
+-rwxrwxrwx 1 monyoudom monyoudom 29 Mar 17 14:48 server_config.txt
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 app.js
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 database.sql
+
+techcorp/engineering/frontend:
+total 512
+-rwxrwxrwx 1 monyoudom monyoudom 26 Mar 17 14:47 frontend_config.txt
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:47 index.html
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:47 styles.css
+
+techcorp/hr:
+total 0
+drwxrwxrwx 1 monyoudom monyoudom 0 Mar 17 16:06 onboarding
+drwxrwxrwx 1 monyoudom monyoudom 0 Mar 17 16:25 policies
+
+techcorp/hr/onboarding:
+total 1.5K
+-rwxrwxrwx 1 monyoudom monyoudom 52 Mar 17 14:47 welcome_guide.txt
+-rwxrwxrwx 1 monyoudom monyoudom 39 Mar 17 16:06 leave_policy.txt
+-rwxrwxrwx 1 monyoudom monyoudom 23 Mar 17 15:44 handbook.txt
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:47 checklist.txt
+
+techcorp/hr/policies:
+total 1.0K
+-rwxrwxrwx 1 monyoudom monyoudom 39 Mar 17 14:46 leave_policy.txt
+-rwxrwxrwx 1 monyoudom monyoudom 32 Mar 17 14:46 remote_work.txt
+
+techcorp/marketing:
+total 4.0K
+drwxrwxrwx 1 monyoudom monyoudom 4.0K Mar 17 16:37 campaigns
+drwxrwxrwx 1 monyoudom monyoudom    0 Mar 17 15:59 assets
+
+techcorp/marketing/campaigns:
+total 1.0K
+-rwxrwxrwx 1 monyoudom monyoudom 35 Mar 17 14:48 social_media.txt
+-rwxrwxrwx 1 monyoudom monyoudom 32 Mar 17 14:48 q1_2026_launch.txt
+
+techcorp/marketing/assets:
+total 512
+-rwxrwxrwx 1 monyoudom monyoudom 22 Mar 17 15:44 logo_brief.txt
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 banner.jpg
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 brochure.pdf
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 logo.png
+
+--- Challenge Investigation ---
+total 2
+-rwxrwxrwx 1 monyoudom monyoudom 39 Mar 17 16:06 leave_policy.txt
+-rwxrwxrwx 1 monyoudom monyoudom 23 Mar 17 15:44 handbook.txt
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:47 checklist.txt
+-rwxrwxrwx 1 monyoudom monyoudom 52 Mar 17 14:47 welcome_guide.txt
+techcorp/marketing/:
+total 4.0K
+drwxrwxrwx 1 monyoudom monyoudom 4.0K Mar 17 16:37 campaigns
+drwxrwxrwx 1 monyoudom monyoudom    0 Mar 17 15:59 assets
+
+techcorp/marketing/campaigns:
+total 1.0K
+-rwxrwxrwx 1 monyoudom monyoudom 35 Mar 17 14:48 social_media.txt
+-rwxrwxrwx 1 monyoudom monyoudom 32 Mar 17 14:48 q1_2026_launch.txt
+
+techcorp/marketing/assets:
+total 512
+-rwxrwxrwx 1 monyoudom monyoudom 22 Mar 17 15:44 logo_brief.txt
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 banner.jpg
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 brochure.pdf
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 logo.png
+total 2
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 Dockerfile
+-rwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:48 docker-compose.yml
+-rwxrwxrwx 1 monyoudom monyoudom 29 Mar 17 14:48 pipeline.txt
+-rwxrwxrwx 1 monyoudom monyoudom 34 Mar 17 16:17 security_audit.txt
+-rwxrwxrwx 1 monyoudom monyoudom 48 Mar 17 15:44 server_notice.txt
+---- Hidden files sorted by size ----
+total 122M
+-rw-rw-r--  1 monyoudom monyoudom 122M Mar 17 03:03 google-chrome-stable_current_amd64.deb
+-rw-------  1 monyoudom monyoudom  25K Mar 17 20:55 .bash_history
+drwxr-x--- 30 monyoudom monyoudom 4.0K Mar 17 18:20 .
+drwxr-xr-x  3 root      root      4.0K Mar 11 10:20 ..
+drwxrwxr-x  3 monyoudom monyoudom 4.0K Mar 17 18:14 build
+drwx------ 23 monyoudom monyoudom 4.0K Mar 17 08:30 .cache
+drwx------ 19 monyoudom monyoudom 4.0K Mar 17 08:27 .config
+drwx------  3 monyoudom monyoudom 4.0K Mar 11 11:07 .copilot
+drwxrwxr-x  6 monyoudom monyoudom 4.0K Mar 12 19:11 dclab_ws
+drwxr-xr-x  2 monyoudom monyoudom 4.0K Mar 11 17:22 Desktop
+drwxr-xr-x  2 monyoudom monyoudom 4.0K Mar 11 17:22 Documents
+drwxrwxr-x  3 monyoudom monyoudom 4.0K Mar 11 11:07 .dotnet
+drwxr-xr-x  4 monyoudom monyoudom 4.0K Mar 17 08:24 Downloads
+drwx------  2 monyoudom monyoudom 4.0K Mar 17 18:21 .gnupg
+drwxrwxr-x  2 monyoudom monyoudom 4.0K Mar 13 15:00 .gphoto
+drwxrwxr-x  3 monyoudom monyoudom 4.0K Mar 17 18:14 install
+drwxrwxr-x  3 monyoudom monyoudom 4.0K Mar 12 14:52 .ipython
+drwx------  7 monyoudom monyoudom 4.0K Mar 16 16:33 .local
+drwxrwxr-x  7 monyoudom monyoudom 4.0K Mar 17 19:20 log
+drwx------  3 monyoudom monyoudom 4.0K Mar 12 18:14 .mozilla
+drwxr-xr-x  2 monyoudom monyoudom 4.0K Mar 11 17:22 Music
+drwxrwxr-x  3 monyoudom monyoudom 4.0K Mar 12 15:29 os-se-p20240002
+drwxr-xr-x  3 monyoudom monyoudom 4.0K Mar 12 17:59 Pictures
+drwx------  3 monyoudom monyoudom 4.0K Mar 11 11:04 .pki
+drwxr-xr-x  2 monyoudom monyoudom 4.0K Mar 11 17:22 Public
+drwxrwxr-x  3 monyoudom monyoudom 4.0K Mar 12 18:15 .ros
+drwx------  4 monyoudom monyoudom 4.0K Mar 11 10:47 snap
+drwx------  2 monyoudom monyoudom 4.0K Mar 17 13:23 .ssh
+drwxr-xr-x  2 monyoudom monyoudom 4.0K Mar 11 17:22 Templates
+drwx------  6 monyoudom monyoudom 4.0K Mar 12 18:14 .thunderbird
+drwxr-xr-x  2 monyoudom monyoudom 4.0K Mar 11 17:22 Videos
+drwxrwxr-x  4 monyoudom monyoudom 4.0K Mar 11 11:04 .vscode
+-rw-r--r--  1 monyoudom monyoudom 3.8K Mar 17 18:20 .bashrc
+-rw-r--r--  1 monyoudom monyoudom  807 Mar 11 10:20 .profile
+-rw-rw-r--  1 monyoudom monyoudom  429 Mar 14 21:34 .nvidia-settings-rc
+-rw-r--r--  1 monyoudom monyoudom  306 Mar 12 19:03 .pam_environment
+-rw-r--r--  1 monyoudom monyoudom  220 Mar 11 10:20 .bash_logout
+-rw-rw-r--  1 monyoudom monyoudom  177 Mar 11 11:01 .wget-hsts
+-rw-rw-r--  1 monyoudom monyoudom   94 Mar 12 18:32 .gitconfig
+-rw-------  1 monyoudom monyoudom   28 Mar 17 15:20 .lesshst
+-rw-rw-r--  1 monyoudom monyoudom    0 Mar 17 14:11 os-se-
+-rw-r--r--  1 monyoudom monyoudom    0 Mar 11 10:37 .sudo_as_admin_successful

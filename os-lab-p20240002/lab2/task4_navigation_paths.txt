@@ -1,0 +1,31 @@
+=== Task 4: Navigation with Paths ===
+--- Absolute path to HR/policies ---
+/media/monyoudom/DRIVE E:/ITC_Coding/Coding_Year2/sem2/OS/os-se-p2024002/os-lab-p20240002/lab2/techcorp/hr/policies
+leave_policy.txt
+remote_work.txt
+--- Up to hr/ ---
+/media/monyoudom/DRIVE E:/ITC_Coding/Coding_Year2/sem2/OS/os-se-p2024002/os-lab-p20240002/lab2/techcorp/hr
+--- Relative path to onboarding/ ---
+checklist.txt
+handbook.txt
+leave_policy.txt
+welcome_guide.txt
+--- Sideways to engineering/frontend/ ---
+/media/monyoudom/DRIVE E:/ITC_Coding/Coding_Year2/sem2/OS/os-se-p2024002/os-lab-p20240002/lab2/techcorp/engineering/frontend
+frontend_config.txt
+index.html
+styles.css
+--- up two level to techcorp/ ---
+/media/monyoudom/DRIVE E:/ITC_Coding/Coding_Year2/sem2/OS/os-se-p2024002/os-lab-p20240002/lab2/techcorp
+--- Absolute path to marketing/campaigns/ ---
+/media/monyoudom/DRIVE E:/ITC_Coding/Coding_Year2/sem2/OS/os-se-p2024002/os-lab-p20240002/lab2/techcorp/marketing/campaigns
+q1_2026_launch.txt
+social_media.txt
+--- cd - (back to prevoiusdirectory) ---
+/media/monyoudom/DRIVE E:/ITC_Coding/Coding_Year2/sem2/OS/os-se-p2024002/os-lab-p20240002/lab2/techcorp
+--- Challenge Navigation ---
+/media/monyoudom/DRIVE E:/ITC_Coding/Coding_Year2/sem2/OS/os-se-p2024002/os-lab-p20240002/lab2/techcorp/engineering/backend
+/media/monyoudom/DRIVE E:/ITC_Coding/Coding_Year2/sem2/OS/os-se-p2024002/os-lab-p20240002/lab2/techcorp/marketing/assets
+/usr/bin
+/media/monyoudom/DRIVE E:/ITC_Coding/Coding_Year2/sem2/OS/os-se-p2024002/os-lab-p20240002/lab2/techcorp/marketing/assets
+/media/monyoudom/DRIVE E:/ITC_Coding/Coding_Year2/sem2/OS/os-se-p2024002/os-lab-p20240002/lab2/techcorp/hr/onboarding

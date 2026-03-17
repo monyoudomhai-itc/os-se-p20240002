@@ -1,0 +1,322 @@
+/
+total 84
+drwxr-xr-x  20 root root  4096 Mar 11 10:19 .
+drwxr-xr-x  20 root root  4096 Mar 11 10:19 ..
+lrwxrwxrwx   1 root root     7 Mar 11 10:18 bin -> usr/bin
+drwxr-xr-x   4 root root  4096 Mar 14 21:32 boot
+drwxrwxr-x   2 root root  4096 Mar 11 10:19 cdrom
+drwxr-xr-x  20 root root  5420 Mar 17 13:04 dev
+drwxr-xr-x 143 root root 12288 Mar 17 08:27 etc
+drwxr-xr-x   3 root root  4096 Mar 11 10:20 home
+lrwxrwxrwx   1 root root     7 Mar 11 10:18 lib -> usr/lib
+lrwxrwxrwx   1 root root     9 Mar 11 10:18 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root     9 Mar 11 10:18 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root    10 Mar 11 10:18 libx32 -> usr/libx32
+drwx------   2 root root 16384 Mar 11 10:18 lost+found
+drwxr-xr-x   3 root root  4096 Mar 11 17:22 media
+drwxr-xr-x   2 root root  4096 Feb 21  2024 mnt
+drwxr-xr-x   4 root root  4096 Mar 17 08:27 opt
+dr-xr-xr-x 457 root root     0 Mar 17 13:04 proc
+drwx------   6 root root  4096 Mar 14 21:31 root
+drwxr-xr-x  36 root root  1020 Mar 17 13:04 run
+lrwxrwxrwx   1 root root     8 Mar 11 10:18 sbin -> usr/sbin
+drwxr-xr-x  11 root root  4096 Feb 21  2024 snap
+drwxr-xr-x   2 root root  4096 Feb 21  2024 srv
+dr-xr-xr-x  13 root root     0 Mar 17 13:04 sys
+drwxrwxrwt  20 root root  4096 Mar 17 14:29 tmp
+drwxr-xr-x  14 root root  4096 Feb 21  2024 usr
+drwxr-xr-x  14 root root  4096 Feb 21  2024 var
+--- /etc ---
+/etc
+acpi
+adduser.conf
+alsa
+alternatives
+anacrontab
+apache2
+apg.conf
+apm
+apparmor
+apparmor.d
+apport
+appstream.conf
+apt
+avahi
+bash.bashrc
+bash_completion
+bash_completion.d
+bindresvport.blacklist
+binfmt.d
+bluetooth
+brlapi.key
+brltty
+brltty.conf
+ca-certificates
+ca-certificates.conf
+ca-certificates.conf.dpkg-old
+chatscripts
+console-setup
+cracklib
+cron.d
+cron.daily
+cron.hourly
+cron.monthly
+crontab
+cron.weekly
+cups
+cupshelpers
+dbus-1
+dconf
+debconf.conf
+debian_version
+default
+deluser.conf
+depmod.d
+dhcp
+dictionaries-common
+dpkg
+e2scrub.conf
+emacs
+environment
+environment.d
+ethertypes
+firefox
+fonts
+fprintd.conf
+fstab
+fuse.conf
+fwupd
+gai.conf
+gdb
+gdm3
+geoclue
+ghostscript
+glvnd
+gnome
+groff
+group
+group-
+grub.d
+gshadow
+gshadow-
+gss
+gtk-2.0
+gtk-3.0
+hdparm.conf
+host.conf
+hostid
+hostname
+hosts
+hosts.allow
+hosts.deny
+hp
+ifplugd
+init
+init.d
+initramfs-tools
+inputrc
+insserv.conf.d
+ipp-usb
+iproute2
+issue
+issue.net
+java-11-openjdk
+java-17-openjdk
+kernel
+kernel-img.conf
+kerneloops.conf
+ldap
+ld.so.cache
+ld.so.conf
+ld.so.conf.d
+legal
+libao.conf
+libaudit.conf
+libblockdev
+libibverbs.d
+libnl-3
+libpaper.d
+libreoffice
+lighttpd
+locale.alias
+locale.gen
+localtime
+logcheck
+login.defs
+logrotate.conf
+logrotate.d
+lsb-release
+machine-id
+magic
+magic.mime
+mailcap
+mailcap.order
+manpath.config
+matplotlibrc
+mercurial
+mime.types
+mke2fs.conf
+ModemManager
+modprobe.d
+modules
+modules-load.d
+mtab
+mysql
+nanorc
+netconfig
+netplan
+network
+networkd-dispatcher
+NetworkManager
+networks
+newt
+nftables.conf
+nsswitch.conf
+ODBCDataSources
+odbc.ini
+odbcinst.ini
+OpenCL
+openmpi
+openni
+openni2
+openvpn
+opt
+os-release
+PackageKit
+pam.conf
+pam.d
+papersize
+passwd
+passwd-
+pcmcia
+perl
+pki
+pm
+pnm2ppa.conf
+polkit-1
+ppp
+prime-discrete
+printcap
+profile
+profile.d
+protocols
+pulse
+python3
+python3.10
+rc0.d
+rc1.d
+rc2.d
+rc3.d
+rc4.d
+rc5.d
+rc6.d
+rcS.d
+resolv.conf
+rmt
+rpc
+rsyslog.conf
+rsyslog.d
+rygel.conf
+sane.d
+security
+selinux
+sensors3.conf
+sensors.d
+services
+sgml
+shadow
+shadow-
+shells
+skel
+snmp
+speech-dispatcher
+ssh
+ssl
+subgid
+subgid-
+subuid
+subuid-
+subversion
+sudo.conf
+sudoers
+sudoers.d
+sudo_logsrvd.conf
+sysctl.conf
+sysctl.d
+systemd
+terminfo
+thermald
+thunderbird
+timezone
+tmpfiles.d
+ubuntu-advantage
+ucf.conf
+u-d-c-nvidia-runtimepm-override
+udev
+udisks2
+ufw
+update-manager
+update-motd.d
+update-notifier
+UPower
+usb_modeswitch.conf
+usb_modeswitch.d
+vdpau_wrapper.cfg
+vim
+vtrgb
+vulkan
+wgetrc
+wpa_supplicant
+X11
+xattr.conf
+xdg
+xml
+zsh_command_not_found
+--- /var ---
+/var
+backups
+cache
+crash
+lib
+local
+lock
+log
+mail
+metrics
+opt
+run
+snap
+spool
+tmp
+--- /tmp ---
+/tmp
+total 100
+drwxrwxrwt 20 root      root      4096 Mar 17 14:29 .
+drwxr-xr-x 20 root      root      4096 Mar 11 10:19 ..
+-rw-rw-r--  1 monyoudom monyoudom  103 Mar 17 13:17 9942d9127deadd56fec4260b0e2310cf-{87A94AB0-E370-4cde-98D3-ACC110C5967D}
+drwx------  2 monyoudom monyoudom 4096 Mar 17 13:08 com.google.Chrome.hu9kBg
+drwxrwxrwt  2 root      root      4096 Mar 17 13:04 .font-unix
+drwxrwxrwt  2 root      root      4096 Mar 17 13:04 .ICE-unix
+drwx------  3 root      root      4096 Mar 17 13:04 snap-private-tmp
+drwx------  3 root      root      4096 Mar 17 13:04 systemd-private-09e7cf10a9594916ae56b90a3aaaf6ed-bluetooth.service-HzJ64b
+drwx------  3 root      root      4096 Mar 17 13:04 systemd-private-09e7cf10a9594916ae56b90a3aaaf6ed-bolt.service-4sJnyM
+drwx------  3 root      root      4096 Mar 17 13:04 systemd-private-09e7cf10a9594916ae56b90a3aaaf6ed-colord.service-oOGs4v
+drwx------  3 root      root      4096 Mar 17 13:04 systemd-private-09e7cf10a9594916ae56b90a3aaaf6ed-ModemManager.service-OjXqSL
+drwx------  3 root      root      4096 Mar 17 13:04 systemd-private-09e7cf10a9594916ae56b90a3aaaf6ed-power-profiles-daemon.service-Um4DGZ
+drwx------  3 root      root      4096 Mar 17 13:04 systemd-private-09e7cf10a9594916ae56b90a3aaaf6ed-switcheroo-control.service-IwhALz
+drwx------  3 root      root      4096 Mar 17 13:04 systemd-private-09e7cf10a9594916ae56b90a3aaaf6ed-systemd-logind.service-jkfv5H
+drwx------  3 root      root      4096 Mar 17 13:04 systemd-private-09e7cf10a9594916ae56b90a3aaaf6ed-systemd-oomd.service-ytHR1O
+drwx------  3 root      root      4096 Mar 17 13:04 systemd-private-09e7cf10a9594916ae56b90a3aaaf6ed-systemd-resolved.service-wIfhc5
+drwx------  3 root      root      4096 Mar 17 13:04 systemd-private-09e7cf10a9594916ae56b90a3aaaf6ed-systemd-timesyncd.service-izxfcL
+drwx------  3 root      root      4096 Mar 17 13:04 systemd-private-09e7cf10a9594916ae56b90a3aaaf6ed-upower.service-ECrl7G
+drwxrwxrwt  2 root      root      4096 Mar 17 13:04 .Test-unix
+srwxrwxr-x  1 monyoudom monyoudom    0 Mar 17 13:17 Uv55aeu2_YMg9CwblO-EiCAH-TD-webview-4446
+srwxrwxr-x  1 monyoudom monyoudom    0 Mar 17 13:17 Uv55aeu2_YMg9CwblO-EiCAH-TD-webview-4464
+-r--r--r--  1 monyoudom monyoudom   11 Mar 17 13:04 .X0-lock
+-r--r--r--  1 gdm       gdm         11 Mar 17 13:04 .X1024-lock
+-r--r--r--  1 gdm       gdm         11 Mar 17 13:04 .X1025-lock
+drwxrwxrwt  2 root      root      4096 Mar 17 13:04 .X11-unix
+-r--r--r--  1 monyoudom monyoudom   11 Mar 17 13:04 .X1-lock
+drwxrwxrwt  2 root      root      4096 Mar 17 13:04 .XIM-unix
+--- Home (~) ---
+/home/monyoudom

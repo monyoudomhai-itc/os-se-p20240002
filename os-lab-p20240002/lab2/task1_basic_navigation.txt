@@ -1,0 +1,33 @@
+/media/monyoudom/DRIVE E:/ITC Coding/Coding_Year2/sem2/OS/os-se-p2024002/os-lab-p20240002/lab2
+total 1
+drwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:18 .
+drwxrwxrwx 1 monyoudom monyoudom  0 Mar 17 14:02 ..
+-rwxrwxrwx 1 monyoudom monyoudom 95 Mar 17 14:22 task1_basic_navigation.txt
+--- Root directory (/) ---
+/
+bin
+boot
+cdrom
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+--- Back to home ---
+/home/monyoudom
