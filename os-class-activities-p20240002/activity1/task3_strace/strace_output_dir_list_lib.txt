@@ -1,0 +1,132 @@
+execve("./../task2/dir_list_lib.out", ["./../task2/dir_list_lib.out"], 0x7ffdf6c33600 /* 77 vars */) = 0
+brk(NULL)                               = 0x57ed28067000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7fffd92ab7d0) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x72b1aed57000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/glibc-hwcaps/x86-64-v4/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/glibc-hwcaps/x86-64-v4", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/glibc-hwcaps/x86-64-v3/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/glibc-hwcaps/x86-64-v3", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/glibc-hwcaps/x86-64-v2/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/glibc-hwcaps/x86-64-v2", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/tls/x86_64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/tls/x86_64/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/tls/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/tls/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/tls", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/x86_64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/x86_64/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/opt/rviz_ogre_vendor/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v4/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v4", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/tls/x86_64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/tls/x86_64/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/tls/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/tls/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/tls", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/x86_64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/x86_64/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/opt/ros/humble/lib/glibc-hwcaps/x86-64-v4/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/glibc-hwcaps/x86-64-v4", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/glibc-hwcaps/x86-64-v3/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/glibc-hwcaps/x86-64-v3", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/glibc-hwcaps/x86-64-v2/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/glibc-hwcaps/x86-64-v2", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/tls/x86_64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/tls/x86_64/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/tls/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/tls/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/tls", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib/x86_64", 0x7fffd92aa9f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/opt/ros/humble/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/opt/ros/humble/lib", {st_mode=S_IFDIR|0755, st_size=32768, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=141068, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 141068, PROT_READ, MAP_PRIVATE, 3, 0) = 0x72b1aed34000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\\{\241H\256\312\201f\200\221\367\30\4px"..., 68, 896) = 68
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x72b1aea00000
+mprotect(0x72b1aea28000, 2023424, PROT_NONE) = 0
+mmap(0x72b1aea28000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x72b1aea28000
+mmap(0x72b1aebbd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x72b1aebbd000
+mmap(0x72b1aec16000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x72b1aec16000
+mmap(0x72b1aec1c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x72b1aec1c000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x72b1aed31000
+arch_prctl(ARCH_SET_FS, 0x72b1aed31740) = 0
+set_tid_address(0x72b1aed31a10)         = 9688
+set_robust_list(0x72b1aed31a20, 24)     = 0
+rseq(0x72b1aed320e0, 0x20, 0, 0x53053053) = 0
+mprotect(0x72b1aec16000, 16384, PROT_READ) = 0
+mprotect(0x57ed13415000, 4096, PROT_READ) = 0
+mprotect(0x72b1aed91000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x72b1aed34000, 141068)          = 0
+openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getrandom("\xa4\x25\x6e\xac\xc1\xef\xe4\xe8", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x57ed28067000
+brk(0x57ed28088000)                     = 0x57ed28088000
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x1), ...}, AT_EMPTY_PATH) = 0
+write(1, "Filename                       S"..., 44) = 44
+write(1, "------------------------------ -"..., 42) = 42
+getdents64(3, 0x57ed280672d0 /* 10 entries */, 32768) = 400
+newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, 0) = 0
+write(1, ".                               "..., 42) = 42
+newfstatat(AT_FDCWD, "..", {st_mode=S_IFDIR|0777, st_size=4096, ...}, 0) = 0
+write(1, "..                              "..., 42) = 42
+newfstatat(AT_FDCWD, "output.txt", {st_mode=S_IFREG|0777, st_size=36, ...}, 0) = 0
+write(1, "output.txt                      "..., 42) = 42
+newfstatat(AT_FDCWD, "strace_lib_reader.txt", {st_mode=S_IFREG|0777, st_size=5055, ...}, 0) = 0
+write(1, "strace_lib_reader.txt           "..., 42) = 42
+newfstatat(AT_FDCWD, "strace_lib_task1.txt", {st_mode=S_IFREG|0777, st_size=5025, ...}, 0) = 0
+write(1, "strace_lib_task1.txt            "..., 42) = 42
+newfstatat(AT_FDCWD, "strace_output.txt", {st_mode=S_IFREG|0777, st_size=12330, ...}, 0) = 0
+write(1, "strace_output.txt               "..., 42) = 42
+newfstatat(AT_FDCWD, "strace_output_dir_list.txt", {st_mode=S_IFREG|0777, st_size=12663, ...}, 0) = 0
+write(1, "strace_output_dir_list.txt      "..., 42) = 42
+newfstatat(AT_FDCWD, "strace_summary_lib.txt", {st_mode=S_IFREG|0777, st_size=1320, ...}, 0) = 0
+write(1, "strace_summary_lib.txt          "..., 42) = 42
+newfstatat(AT_FDCWD, "strace_summary_sys.txt", {st_mode=S_IFREG|0777, st_size=1259, ...}, 0) = 0
+write(1, "strace_summary_sys.txt          "..., 42) = 42
+newfstatat(AT_FDCWD, "strace_sys_reader.txt", {st_mode=S_IFREG|0777, st_size=5054, ...}, 0) = 0
+write(1, "strace_sys_reader.txt           "..., 42) = 42
+getdents64(3, 0x57ed280672d0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
