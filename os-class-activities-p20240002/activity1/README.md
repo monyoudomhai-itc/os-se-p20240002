@@ -144,11 +144,11 @@ Screenshot of running on Windows:
 
 ### strace Output — Library Version (File Reader or Dir Listing)
 
-![strace - Library version](screenshots/strace_lib_reader.png)
+![strace - Library version](screenshots/strace_output_lib.png)
 
 ### strace Output — System Call Version (File Reader or Dir Listing)
 
-![strace - System call version](screenshots/strace_sys_reader.png)
+![strace - System call version](screenshots/strace_output_sys.png)
 
 ### strace -c Summary Comparison
 
