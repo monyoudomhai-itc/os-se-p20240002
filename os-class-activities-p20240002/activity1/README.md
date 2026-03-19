@@ -281,4 +281,6 @@ Screenshot of running on Windows:
 
 What did you learn from this activity? What was the most surprising difference between library functions and system calls?
 
-> [Write your reflection here]
+> I have learnt how to srace ,check kernal ,cpu indo , memory info ,create file using library function and sysytem call directly. learn how to implement cpp using both method to create read write copy files.
+
+>The most surprising difference between library functions and system calls is that they look similar but work in very different ways. Library functions are easy to use and run in user space, while system calls directly communicate with the operating system in kernel space. I was surprised to learn that some library functions, like printf(), actually use system calls inside them to do the real work. This shows that system calls are more powerful, but library functions make programming easier.
