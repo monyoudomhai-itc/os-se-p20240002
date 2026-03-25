@@ -234,3 +234,15 @@ GRUB_BACKGROUND="/boot/grub/grub_bg.png"
 # Uncomment to get a beep at grub start
 #GRUB_INIT_TUNE="480 440 1"
 --- Final /etc/default/grub (with background) ---
+
+=== Part C : Boot Recovery ===
+Boot recovery successful on Wed Mar 25 08:23:53 AM +07 2026
+6.8.0-106-generic
+ 08:24:29 up 9 min,  1 user,  load average: 0.09, 0.21, 0.16
+--- Challenge GRUB ---
+--- find root uuid ---
+	linux	/boot/vmlinuz-6.8.0-106-generic root=UUID=9f6d0706-c2fb-4831-acd6-89b879f80500 ro  quiet splash $vt_handoff
+		linux	/boot/vmlinuz-6.8.0-106-generic root=UUID=9f6d0706-c2fb-4831-acd6-89b879f80500 ro  quiet splash $vt_handoff
+		linux	/boot/vmlinuz-6.8.0-106-generic root=UUID=9f6d0706-c2fb-4831-acd6-89b879f80500 ro recovery nomodeset dis_ucode_ldr 
+		linux	/boot/vmlinuz-6.8.0-101-generic root=UUID=9f6d0706-c2fb-4831-acd6-89b879f80500 ro  quiet splash $vt_handoff
+		linux	/boot/vmlinuz-6.8.0-101-generic root=UUID=9f6d0706-c2fb-4831-acd6-89b879f80500 ro recovery nomodeset dis_ucode_ldr 
