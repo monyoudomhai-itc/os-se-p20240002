@@ -1,0 +1,10 @@
+total 24
+drwxrwxrwx 1 monyoudom monyoudom   384 Mar 26 16:08 .
+drwxrwxrwx 1 monyoudom monyoudom     0 Mar 26 16:05 ..
+-rwxrwxrwx 1 monyoudom monyoudom 16400 Mar 26 16:07 forkchild
+-rwxrwxrwx 1 monyoudom monyoudom  1431 Mar 26 16:07 forkchild.c
+-rwxrwxrwx 1 monyoudom monyoudom     0 Mar 26 16:08 result_forkchild.txt
+Parent process (PID: 66061) — creating child...
+Parent: waiting for child (PID: 66062) to finish...
+Parent: child exited with status 0
+Parent: done.

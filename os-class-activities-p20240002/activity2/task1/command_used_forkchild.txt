@@ -1,0 +1,20 @@
+ 1996  java task3
+ 1997  javac task3.java
+ 1998  java task3
+ 1999  javac task3.java
+ 2000  java task3
+ 2001  ls
+ 2002  cd Lect/
+ 2003  git pull origin main 
+ 2004  cd ../os-se-p20240002/os-class-activities-p20240002/
+ 2005  ls
+ 2006  mkdir -p activity2/task1
+ 2007  cd activity2/task1/
+ 2008  nano forkchild.c
+ 2009  gcc -o forkchild forkchild.c 
+ 2010  ./forkchild
+ 2011  ./forkchild > result_forkchild.txt 2>&1
+ 2012  cat result_forkchild.txt 
+ 2013  ps -ef --forest | grep forkchild
+ 2014  pstree -p $(pgrep -o forkchild)
+ 2015  history | tail -n 20 > command_used_forkchild.txt
