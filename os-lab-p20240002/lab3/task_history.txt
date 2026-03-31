@@ -1,0 +1,101 @@
+=== Full Command History ===
+ 1887  convert background.png -resize 1920x1080 -depth 24 /boot/grub/background.png
+ 1888  sudo apt install imagemagick-6.q16
+ 1889  sudo convert background.png -resize 1920x1080 -depth 24 /boot/grub/background.png
+ 1890  grep -i background /boot/grub/grub.cfg
+ 1891  grep -i background /etc/default/grub
+ 1892  ```
+ 1893  It should have something like:
+ 1894  ```
+ 1895  GRUB_BACKGROUND="/boot/grub/background.png"
+ 1896  sudo grub-update
+ 1897  sudo update-grub
+ 1898  grep -i theme /etc/default/grub
+ 1899  grep -i background /boot/grub/grub.cfg
+ 1900  grep -i background /etc/default/grub
+ 1901  cat /etc/default/grub
+ 1902  sudo nano /etc/default/grub
+ 1903  sudo update-grub
+ 1904  sudo reboot
+ 1905  sudo nano /etc/default/grub
+ 1906  sudo convert -size 640x480 gradient:'#1a1a2e-#16213e' /boot/grub/background.png
+ 1907  sudo nano /etc/default/grub
+ 1908  sudo update-grub
+ 1909  sudo reboot
+ 1910  sudo nano /etc/default/grub
+ 1911  sudo update-grub
+ 1912  sudo reboot
+ 1913  cat /etc/default/grub
+ 1914  grep -i background /boot/grub/grub.cfg
+ 1915  sudo update-grub
+ 1916  grep -i background /boot/grub/grub.cfg
+ 1917  sudo nano  /etc/default/grub
+ 1918  sudo update-grub
+ 1919  grep -i background /boot/grub/grub.cfg
+ 1920  sudo update-grub
+ 1921  sudo reboot
+ 1922  mount_school 
+ 1923  os
+ 1924  code .
+ 1925  cd os-se-p20240002/
+ 1926  ls
+ 1927  cd os-lab-p20240002/lab3/
+ 1928  ls
+ 1929  mkdir -p shared_lib_lab
+ 1930  cd shared_lib_lab
+ 1931  echo "=== Task 5: Build and Register a Shared Library ===" > ../task5_shared_library.txt
+ 1932  cat > techcorp_sysinfo.h << 'EOF'
+ 1933  cat > techcorp_sysinfo.h << 'EOF'
+ 1934  #ifndef TECHCORP_SYSINFO_H
+ 1935  #define TECHCORP_SYSINFO_H
+ 1936  // Returns the hostname of the machine
+ 1937  const char* tc_get_hostname(void);
+ 1938  // Returns the current uptime in a human-readable string
+ 1939  const char* tc_get_uptime(void);
+ 1940  // Returns the number of CPU cores
+ 1941  int tc_get_cpu_count(void);
+ 1942  #endif
+ 1943  EOF
+ 1944  echo "--- API Design (header file) ---" >> ../task5_shared_library.txt
+ 1945  cat techcorp_sysinfo.h >> ../task5_shared_library.txt
+ 1946  cat techcorp_sysinfo.h 
+ 1947  cat > techcorp_sysinfo.c << 'EOF'
+ 1948  #include "techcorp_sysinfo.h"
+ 1949  #include <stdio.h>
+ 1950  #include <stdlib.h>
+ 1951  #include <string.h>
+ 1952  #include <unistd.h>
+ 1953  static char hostname_buf[256];
+ 1954  static char uptime_buf[128];
+ 1955  const char* tc_get_hostname(void) {
+ 1956      if (gethostname(hostname_buf, sizeof(hostname_buf)) == 0)
+ 1957          return hostname_buf;
+ 1958      return "unknown";
+ 1959  }
+ 1960  const char* tc_get_uptime(void) {
+ 1961      FILE *fp = fopen("/proc/uptime", "r");
+ 1962      if (fp) {
+ 1963          double up_seconds;
+ 1964          if (fscanf(fp, "%lf", &up_seconds) == 1) {
+ 1965              int hours = (int)(up_seconds / 3600);
+ 1966              int minutes = ((int)up_seconds % 3600) / 60;
+ 1967              snprintf(uptime_buf, sizeof(uptime_buf),
+ 1968                       "%d hours, %d minutes", hours, minutes);
+ 1969          }
+ 1970          fclose(fp);
+ 1971          return uptime_buf;
+ 1972      }
+ 1973      return "unknown";
+ 1974  }
+ 1975  int tc_get_cpu_count(void) {
+ 1976      return (int)sysconf(_SC_NPROCESSORS_ONLN);
+ 1977  }
+ 1978  EOF
+ 1979  gcc -fPIC -c techcorp_sysinfo.c -o techcorp_sysinfo.o
+ 1980  gcc -shared -o libtechcorp_sysinfo.so techcorp_sysinfo.o
+ 1981  echo "" >> ../task5_shared_library.txt
+ 1982  echo "--- Partner A: Compiled shared library ---" >> ../task5_shared_library.txt
+ 1983  file libtechcorp_sysinfo.so >> ../task5_shared_library.txt
+ 1984  ls -l libtechcorp_sysinfo.so >> ../task5_shared_library.txt
+ 1985  cd os-se-p20240002/os-lab-p20240002/lab3/
+ 1986  echo "=== Full Command History ===" > task_history.txt
