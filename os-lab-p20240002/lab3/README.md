@@ -2,8 +2,8 @@
 
 - **Student Name:** HAI Monyoudom
 - **Student ID:** p20240002
-- **Partner Name (Task 5):** [Partner Name Here]
-- **Partner ID (Task 5):** [Partner Student ID Here]
+- **Partner Name (Task 5):** Pav Ratana
+- **Partner ID (Task 5):** p20240047
 
 ---
 
@@ -76,7 +76,7 @@ Show the GRUB menu displaying your custom "TechCorp Training VM — Boot Standar
 Show the GRUB menu with your custom background image visible behind the menu text.
 
 <!-- Insert your screenshot below: -->
-![Task 3 Background](images/task3_background.png)
+![Task 3 Background](images/task3_background.jpg)
 
 ---
 
@@ -148,7 +148,7 @@ Show **both partners' screens** with the agreed header file (`techcorp_sysinfo.h
 Show the final integration test: `ldconfig -p | grep techcorp` showing registration, `ldd ./sysinfo_test_v2` showing the library is resolved, and the v2 test program output displaying hostname, uptime, CPU cores, and memory.
 
 <!-- Insert your screenshot below: -->
-![Task 5 Pair Integration](images/task5_pair_integration.png)
+![Task 5 Pair Integration](images/task5_pair_integration.jpg)
 
 ---
 
