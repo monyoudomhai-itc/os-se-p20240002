@@ -1,0 +1,252 @@
+=== Task4: Process Management ===
+--- Current processes (your user) ---
+    PID TTY          TIME CMD
+   1750 ?        00:00:00 systemd
+   1751 ?        00:00:00 (sd-pam)
+   1757 ?        00:00:00 pipewire
+   1758 ?        00:00:00 pipewire-media-
+   1759 ?        00:00:00 pulseaudio
+   1768 ?        00:00:00 gnome-keyring-d
+   1780 ?        00:00:00 dbus-daemon
+   1797 ?        00:00:00 xdg-document-po
+   1800 ?        00:00:00 xdg-permission-
+   1828 tty2     00:00:00 gdm-wayland-ses
+   1831 tty2     00:00:00 gnome-session-b
+   1878 ?        00:00:00 gnome-session-c
+   1889 ?        00:00:00 gvfsd
+   1895 ?        00:00:00 gvfsd-fuse
+   1898 ?        00:00:00 gnome-session-b
+   1921 ?        00:00:00 at-spi-bus-laun
+   1927 ?        00:00:00 dbus-daemon
+   1930 ?        00:11:59 gnome-shell
+   1978 ?        00:00:00 gnome-shell-cal
+   1984 ?        00:00:00 evolution-sourc
+   1989 ?        00:00:00 dconf-service
+   1992 ?        00:00:00 gvfs-udisks2-vo
+   1995 ?        00:00:00 goa-daemon
+   2002 ?        00:00:00 evolution-calen
+   2003 ?        00:00:00 gvfs-gphoto2-vo
+   2009 ?        00:00:00 gvfs-afc-volume
+   2020 ?        00:00:00 goa-identity-se
+   2021 ?        00:00:00 gvfs-mtp-volume
+   2029 ?        00:00:00 gvfs-goa-volume
+   2041 ?        00:00:00 evolution-addre
+   2055 ?        00:00:00 gvfsd-trash
+   2066 ?        00:00:00 gjs
+   2069 ?        00:00:00 at-spi2-registr
+   2085 ?        00:00:00 sh
+   2086 ?        00:00:00 gsd-a11y-settin
+   2088 ?        00:00:00 gsd-color
+   2089 ?        00:00:21 ibus-daemon
+   2091 ?        00:00:00 gsd-datetime
+   2093 ?        00:00:00 gsd-housekeepin
+   2095 ?        00:00:00 gsd-keyboard
+   2099 ?        00:00:00 gsd-media-keys
+   2101 ?        00:00:00 gsd-power
+   2105 ?        00:00:00 gsd-print-notif
+   2107 ?        00:00:00 gsd-rfkill
+   2109 ?        00:00:00 gsd-screensaver
+   2113 ?        00:00:00 gsd-sharing
+   2115 ?        00:00:00 gsd-smartcard
+   2117 ?        00:00:00 gsd-sound
+   2121 ?        00:00:00 gsd-wacom
+   2161 ?        00:00:00 gsd-disk-utilit
+   2167 ?        00:00:00 ibus-memconf
+   2168 ?        00:00:03 ibus-extension-
+   2170 ?        00:00:00 evolution-alarm
+   2184 ?        00:00:00 ibus-portal
+   2249 ?        00:00:02 snap-store
+   2289 ?        00:00:08 ibus-engine-sim
+   2295 ?        00:00:00 gsd-printer
+   2314 ?        00:00:00 xdg-desktop-por
+   2319 ?        00:00:00 tracker-miner-f
+   2335 ?        00:00:00 xdg-desktop-por
+   2410 ?        00:00:00 snapd-desktop-i
+   2473 ?        00:00:00 snapd-desktop-i
+   2490 ?        00:00:00 gjs
+   2503 ?        00:00:00 gjs
+   2554 ?        00:00:00 xdg-desktop-por
+   2658 ?        00:00:00 gvfsd-metadata
+   2675 ?        00:00:02 copyq
+   2677 ?        00:00:03 Xwayland
+   2687 ?        00:00:00 gsd-xsettings
+   2728 ?        00:00:00 ibus-x11
+   2771 ?        00:00:03 copyq
+   2774 ?        00:00:00 copyq
+   4003 ?        00:00:01 gnome-terminal-
+   4056 pts/0    00:00:00 bash
+   4922 ?        00:00:00 update-notifier
+   5803 ?        00:02:18 code
+   5806 ?        00:00:00 code
+   5807 ?        00:00:00 code
+   5809 ?        00:00:00 code
+   5828 ?        00:00:00 chrome_crashpad
+   5848 ?        00:03:07 code
+   5854 ?        00:00:02 code
+   5875 ?        00:07:43 code
+   5922 ?        00:00:45 code
+   5947 ?        00:00:43 code
+   6151 ?        00:00:03 cpptools
+   6178 ?        00:00:04 code
+   6179 ?        00:00:05 code
+   6225 ?        00:00:00 code
+   6249 pts/1    00:00:00 bash
+   6252 pts/2    00:00:00 bash
+   6319 ?        00:00:00 code
+   6532 pts/3    00:00:01 bash
+   9131 ?        00:03:07 chrome
+   9136 ?        00:00:00 cat
+   9137 ?        00:00:00 cat
+   9139 ?        00:00:00 chrome_crashpad
+   9141 ?        00:00:00 chrome_crashpad
+   9147 ?        00:00:00 chrome
+   9148 ?        00:00:00 chrome
+   9150 ?        00:00:00 chrome
+   9185 ?        00:08:42 chrome
+   9187 ?        00:00:08 chrome
+   9199 ?        00:00:00 chrome
+   9363 ?        00:00:51 chrome
+   9574 ?        00:00:00 chrome
+   9595 ?        00:00:00 chrome
+   9596 ?        00:00:00 chrome
+   9679 ?        00:00:01 chrome
+   9707 ?        00:00:01 chrome
+   9716 ?        00:10:23 chrome
+  11655 ?        00:00:00 chrome
+  12998 ?        00:00:15 Telegram
+  18907 ?        00:00:01 code
+  19738 pts/3    00:00:00 ps
+--- All processes (snapshot) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0 166892 12240 ?        Ss   13:13   0:01 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    13:13   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    13:13   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   13:13   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   13:13   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   13:13   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   13:13   0:00 [kworker/R-netns]
+root           9  0.0  0.0      0     0 ?        I    13:13   0:00 [kworker/0:1-events_freezable]
+root          10  0.0  0.0      0     0 ?        I<   13:13   0:00 [kworker/0:0H-events_highpri]
+root          12  0.0  0.0      0     0 ?        I<   13:13   0:00 [kworker/R-mm_pe]
+root          13  0.0  0.0      0     0 ?        I    13:13   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    13:13   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    13:13   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    13:13   0:00 [ksoftirqd/0]
+root          17  0.4  0.0      0     0 ?        I    13:13   0:25 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    13:13   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    13:13   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    13:13   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    13:13   0:00 [cpuhp/1]
+--- Process tree ---
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           2       0  0 13:13 ?        00:00:00 [kthreadd]
+root           3       2  0 13:13 ?        00:00:00  \_ [pool_workqueue_release]
+root           4       2  0 13:13 ?        00:00:00  \_ [kworker/R-rcu_g]
+root           5       2  0 13:13 ?        00:00:00  \_ [kworker/R-rcu_p]
+root           6       2  0 13:13 ?        00:00:00  \_ [kworker/R-slub_]
+root           7       2  0 13:13 ?        00:00:00  \_ [kworker/R-netns]
+root           9       2  0 13:13 ?        00:00:00  \_ [kworker/0:1-events]
+root          10       2  0 13:13 ?        00:00:00  \_ [kworker/0:0H-events_highpri]
+root          12       2  0 13:13 ?        00:00:00  \_ [kworker/R-mm_pe]
+root          13       2  0 13:13 ?        00:00:00  \_ [rcu_tasks_kthread]
+root          14       2  0 13:13 ?        00:00:00  \_ [rcu_tasks_rude_kthread]
+root          15       2  0 13:13 ?        00:00:00  \_ [rcu_tasks_trace_kthread]
+root          16       2  0 13:13 ?        00:00:00  \_ [ksoftirqd/0]
+root          17       2  0 13:13 ?        00:00:25  \_ [rcu_preempt]
+root          18       2  0 13:13 ?        00:00:00  \_ [migration/0]
+root          19       2  0 13:13 ?        00:00:00  \_ [idle_inject/0]
+root          20       2  0 13:13 ?        00:00:00  \_ [cpuhp/0]
+root          21       2  0 13:13 ?        00:00:00  \_ [cpuhp/1]
+root          22       2  0 13:13 ?        00:00:00  \_ [idle_inject/1]
+root          23       2  0 13:13 ?        00:00:00  \_ [migration/1]
+root          24       2  0 13:13 ?        00:00:00  \_ [ksoftirqd/1]
+root          26       2  0 13:13 ?        00:00:00  \_ [kworker/1:0H-events_highpri]
+root          27       2  0 13:13 ?        00:00:00  \_ [cpuhp/2]
+root          28       2  0 13:13 ?        00:00:00  \_ [idle_inject/2]
+root          29       2  0 13:13 ?        00:00:00  \_ [migration/2]
+root          30       2  0 13:13 ?        00:00:00  \_ [ksoftirqd/2]
+root          31       2  0 13:13 ?        00:00:00  \_ [kworker/2:0-events]
+root          32       2  0 13:13 ?        00:00:00  \_ [kworker/2:0H-events_highpri]
+root          33       2  0 13:13 ?        00:00:00  \_ [cpuhp/3]
+--- Top 10 CPU consumers (via ps, not top) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+monyoud+    9716 15.6  2.3 1460131332 363144 ?   Sl   13:40  11:07 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=9139 --enable-crash-reporter=b45c59f0-aa47-4e5c-b8f3-d3d48a3efe82, --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=31 --time-ticks-at-unix-epoch=-1774937598337225 --launch-time-ticks=1609379779 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,13048127643933958323,16465929257156114805,2097152 --field-trial-handle=3,i,8881779305335002208,12642694769520233395,262144 --disable-features=EyeDropper --variations-seed-version=20260330-170028.940000-production --pseudonymization-salt-handle=7,i,8986401700686120930,5928872591685551632,4 --trace-process-track-uuid=3190709015360168813
+monyoud+    1930 13.6  2.7 5964040 424796 ?      Ssl  13:13  13:22 /usr/bin/gnome-shell
+monyoud+    9185 12.6  1.8 51509056 282588 ?     Sl   13:37   9:20 /opt/google/chrome/chrome --type=gpu-process --ozone-platform=wayland --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=9139 --enable-crash-reporter=b45c59f0-aa47-4e5c-b8f3-d3d48a3efe82, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,4524491155629200619,12036699429565270633,262144 --field-trial-handle=3,i,8881779305335002208,12642694769520233395,262144 --disable-features=EyeDropper --variations-seed-version=20260330-170028.940000-production --pseudonymization-salt-handle=7,i,8986401700686120930,5928872591685551632,4 --trace-process-track-uuid=3190708988185955192
+monyoud+    5875  9.4  2.8 1480192572 440628 ?   Rl   13:23   8:18 /usr/share/code/code --type=zygote
+monyoud+   20506  5.6  0.8 1476701884 129672 ?   Sl   14:50   0:03 /usr/share/code/code --type=zygote
+monyoud+    9131  4.5  2.5 51261236 399576 ?     SLl  13:37   3:21 /opt/google/chrome/chrome
+monyoud+    5848  3.8  1.5 34575904 247768 ?     Sl   13:23   3:22 /usr/share/code/code --type=zygote --no-zygote-sandbox
+monyoud+    5803  2.8  1.7 1478483920 281536 ?   SLsl 13:23   2:29 /usr/share/code/code .
+monyoud+    9363  1.2  2.0 1460162392 326176 ?   Sl   13:37   0:53 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=9139 --enable-crash-reporter=b45c59f0-aa47-4e5c-b8f3-d3d48a3efe82, --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=9 --time-ticks-at-unix-epoch=-1774937598337225 --launch-time-ticks=1463618547 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,5083221374264502961,9523491380607944593,2097152 --field-trial-handle=3,i,8881779305335002208,12642694769520233395,262144 --disable-features=EyeDropper --variations-seed-version=20260330-170028.940000-production --pseudonymization-salt-handle=7,i,8986401700686120930,5928872591685551632,4 --trace-process-track-uuid=3190708994745248135
+root       20518  1.1  0.0      0     0 ?        I    14:50   0:00 [kworker/u32:1-events_unbound]
+--- Top 10 memory consumers ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+monyoud+   12998  0.5  4.2 1839160 659276 ?      Sl   14:04   0:15 /home/monyoudom/Downloads/Telegram/Telegram
+monyoud+    5922  0.8  3.1 1461345276 486396 ?   Sl   13:23   0:47 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --render-node-override=/dev/dri/renderD128 --dns-result-order=ipv4first --experimental-network-inspection --inspect-port=0 --js-flags=--nodecommit_pooled_pages --crashpad-handler-pid=5828 --enable-crash-reporter=f3593d09-1892-4c5c-b8cb-06955dfa64e6,no_channel --user-data-dir=/home/monyoudom/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,15690441681775242368,2752830858423663680,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708990997080739
+monyoud+    5875  9.3  2.8 1480192572 440352 ?   Rl   13:23   8:23 /usr/share/code/code --type=zygote
+monyoud+    1930 13.7  2.7 5964040 424716 ?      Ssl  13:13  13:39 /usr/bin/gnome-shell
+monyoud+    9131  4.5  2.5 51261236 399576 ?     SLl  13:37   3:24 /opt/google/chrome/chrome
+monyoud+    9716 15.5  2.3 1460131332 363700 ?   Sl   13:40  11:16 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=9139 --enable-crash-reporter=b45c59f0-aa47-4e5c-b8f3-d3d48a3efe82, --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=31 --time-ticks-at-unix-epoch=-1774937598337225 --launch-time-ticks=1609379779 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,13048127643933958323,16465929257156114805,2097152 --field-trial-handle=3,i,8881779305335002208,12642694769520233395,262144 --disable-features=EyeDropper --variations-seed-version=20260330-170028.940000-production --pseudonymization-salt-handle=7,i,8986401700686120930,5928872591685551632,4 --trace-process-track-uuid=3190709015360168813
+monyoud+    9363  1.1  2.0 1460162392 326008 ?   Sl   13:37   0:53 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=9139 --enable-crash-reporter=b45c59f0-aa47-4e5c-b8f3-d3d48a3efe82, --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=9 --time-ticks-at-unix-epoch=-1774937598337225 --launch-time-ticks=1463618547 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,5083221374264502961,9523491380607944593,2097152 --field-trial-handle=3,i,8881779305335002208,12642694769520233395,262144 --disable-features=EyeDropper --variations-seed-version=20260330-170028.940000-production --pseudonymization-salt-handle=7,i,8986401700686120930,5928872591685551632,4 --trace-process-track-uuid=3190708994745248135
+monyoud+    9185 12.6  1.8 51509056 282588 ?     Sl   13:37   9:28 /opt/google/chrome/chrome --type=gpu-process --ozone-platform=wayland --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=9139 --enable-crash-reporter=b45c59f0-aa47-4e5c-b8f3-d3d48a3efe82, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,4524491155629200619,12036699429565270633,262144 --field-trial-handle=3,i,8881779305335002208,12642694769520233395,262144 --disable-features=EyeDropper --variations-seed-version=20260330-170028.940000-production --pseudonymization-salt-handle=7,i,8986401700686120930,5928872591685551632,4 --trace-process-track-uuid=3190708988185955192
+monyoud+    5803  2.8  1.8 1478483920 282032 ?   SLsl 13:23   2:31 /usr/share/code/code .
+monyoud+    5848  3.8  1.5 34575904 247104 ?     Sl   13:23   3:24 /usr/share/code/code --type=zygote --no-zygote-sandbox
+--- Background jobs ---
+[1]- 22587 Running                 sleep 300 &
+[2]+ 22614 Running                 sleep 500 &
+--- After Ctrl + Z (stopped job) ---
+[1]  22587 Running                 sleep 300 &
+[2]- 22614 Running                 sleep 500 &
+[3]+ 23179 Stopped                 sleep 600
+--- After bg (resumed in background) ---
+[2]- 22614 Running                 sleep 500 &
+[3]+ 23179 Stopped                 sleep 600
+--- After terminating all sleep jobs ---
+Started sleep with PID: 24492
+--- Available signals ---
+ 1) SIGHUP	 2) SIGINT	 3) SIGQUIT	 4) SIGILL	 5) SIGTRAP
+ 6) SIGABRT	 7) SIGBUS	 8) SIGFPE	 9) SIGKILL	10) SIGUSR1
+11) SIGSEGV	12) SIGUSR2	13) SIGPIPE	14) SIGALRM	15) SIGTERM
+16) SIGSTKFLT	17) SIGCHLD	18) SIGCONT	19) SIGSTOP	20) SIGTSTP
+21) SIGTTIN	22) SIGTTOU	23) SIGURG	24) SIGXCPU	25) SIGXFSZ
+26) SIGVTALRM	27) SIGPROF	28) SIGWINCH	29) SIGIO	30) SIGPWR
+31) SIGSYS	34) SIGRTMIN	35) SIGRTMIN+1	36) SIGRTMIN+2	37) SIGRTMIN+3
+38) SIGRTMIN+4	39) SIGRTMIN+5	40) SIGRTMIN+6	41) SIGRTMIN+7	42) SIGRTMIN+8
+43) SIGRTMIN+9	44) SIGRTMIN+10	45) SIGRTMIN+11	46) SIGRTMIN+12	47) SIGRTMIN+13
+48) SIGRTMIN+14	49) SIGRTMIN+15	50) SIGRTMAX-14	51) SIGRTMAX-13	52) SIGRTMAX-12
+53) SIGRTMAX-11	54) SIGRTMAX-10	55) SIGRTMAX-9	56) SIGRTMAX-8	57) SIGRTMAX-7
+58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
+63) SIGRTMAX-1	64) SIGRTMAX	
+--- After SIGSTOP ---
+    PID STAT CMD
+  24492 T    sleep 1000
+--- After SIGCONT ---
+    PID STAT CMD
+  24492 T    sleep 1000
+--- nohup demo ---
+nohup sleep PID: 25644
+-rwxrwxrwx 1 monyoudom monyoudom 0 Mar 31 15:30 nohup.out
+---Challenge Process Management ---
+=== 4a: Start sleep processes in background ===
+[1]+ 24492 Stopped (signal)        sleep 1000
+[2]  26345 Running                 sleep 100 &
+[3]  26346 Running                 sleep 200 &
+[4]- 26347 Running                 sleep 300 &
+
+=== ps --forest output ===
+  24492 pts/3    00:00:00  |   |   |   \_ sleep
+  26345 pts/3    00:00:00  |   |   |   \_ sleep
+  26346 pts/3    00:00:00  |   |   |   \_ sleep
+  26347 pts/3    00:00:00  |   |   |   \_ sleep
+  26348 pts/3    00:00:00  |   |   |   \_ ps
+
+=== Killing all sleep processes ===
+All sleep processes killed
+
+=== 4b: bash PIDs via pgrep ===
+4056 bash
+6249 /usr/bin/bash --init-file /usr/share/code/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+6252 /usr/bin/bash --init-file /usr/share/code/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+6532 /usr/bin/bash --init-file /usr/share/code/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+21105 /usr/bin/bash --init-file /usr/share/code/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh

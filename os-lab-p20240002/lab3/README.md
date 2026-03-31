@@ -139,7 +139,7 @@ Show the terminal where you ran your shared objects challenge commands **4a–4d
 Show **both partners' screens** with the agreed header file (`techcorp_sysinfo.h`) open, proving the API was designed collaboratively.
 
 <!-- Insert your screenshot below: -->
-![Task 5 Pair Design](images/task5_pair_design.png)
+![Task 5 Pair Design](images/task5_pair_design.jpg)
 
 ---
 

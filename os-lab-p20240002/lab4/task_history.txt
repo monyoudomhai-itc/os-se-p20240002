@@ -1,0 +1,101 @@
+=== Full Command History ===
+ 2091  awk '{print $1, $9}' access.log >> task3_analysis.txt 
+ 2092  echo "--- Total bytes transferred ---" >> task3_analysis.txt 
+ 2093  awk '{sum += $10} END {print "Total bytes:",sum}' accesss.log >> task3_analysis.txt 
+ 2094  awk '{sum += $10} END {print "Total bytes:",sum}' access.log >> task3_analysis.txt 
+ 2095  echo "--- Request per IP---" >> task3_analysis.txt 
+ 2096  awk '{print $1}' access.log | sort | uniq -c | sort -rn >> task3
+ 2097  awk '{print $1}' access.log | sort | uniq -c | sort -rn >> task3_analysis.txt 
+ 2098  echo "--- Users with /bin/bash shell ---" >> task3_analysis.txt 
+ 2099  grep "/bin/bash" /etx/passwd | cut -d: -f1 >> task3_analysis.txt 
+ 2100  echo "--- Number of system user (UID < 1000) ---" >> task3_analysis.txt 
+ 2101  awk -F: '$3 < 1000 {count++} END {print "System users:", count}' /etc/passwd >> task3_analysis.txt 
+ 2102  echo "--- Number of regular users (UID >= 1000) ---" >> task3_analysis.txt
+ 2103  awk -F: '$3 >= 1000 {count++} END {print "Regular users:", count}' /etc/passwd >> task3_analysis.txt
+ 2104  echo "--- Challenge Data Analysis ---" >> task3_analysis.txt
+ 2105  echo "--- 3a find request with 403 ---" >> task3_analysis.txt 
+ 2106  grep " 403 " access.log | awk '{print $1, $6}' | tr -d '"'
+ 2107  grep " 403 " access.log | awk '{print $1, $6}' | tr -d '"' >> task3_analysis.txt 
+ 2108  echo "--- 3b create summary ---" >> task3_analysis.txt 
+ 2109  cut -d: -f7 /etc/passwd | sort | uniq -c | sort -rn
+ 2110  cut -d: -f7 /etc/passwd | sort | uniq -c | sort -rn >> task3_analysis.txt 
+ 2111  echo "--- 3c find ip that the most request ---" >> task3_analysis.txt 
+ 2112  awk '{print $1}' access.log | sort | uniq -c | sort -rn | head -n 1
+ 2113  awk '{print $1}' access.log | sort | uniq -c | sort -rn | head -n 1 >> task3_analysis.txt 
+ 2114  echo "=== Task4: Process Management ===" > task4_processes.txt
+ 2115  ps aux | head -n 15
+ 2116  echo "--- Current processes (your user) ---" >> task4_processes.txt 
+ 2117  ps -u $USER >> task4_processes.txt 
+ 2118  echo "--- All processes (snapshot) ---" >> task4_processes.txt 
+ 2119  ps aux | head -n 20 >> task4_processes.txt 
+ 2120  echo "--- Process tree ---" >> task4_processes.txt 
+ 2121  ps -ef --forest | head -n 30 >> task4_processes.txt 
+ 2122  top
+ 2123  echo "--- Top 10 CPU consumers (via ps, not top) ---" >> task4_processes.txt
+ 2124  ps aux --sort=-%cpu | head -n 11 >> task4_processes.txt
+ 2125  echo "--- Top 10 memory consumers ---" >> task4_processes.txt 
+ 2126  ps aux --sort=-%mem | head -n 11 >> task4_processes.txt 
+ 2127  htop
+ 2128  sleep 300 &
+ 2129  sleep 500 &
+ 2130  echo "--- Background jobs ---" >> task4_processes.txt 
+ 2131  jobs-l
+ 2132  jobs -l
+ 2133  jobs -l >> task4_processes.txt
+ 2134  sleep 600
+ 2135  echo "--- After Ctrl + Z (stopped job) ---" >> task4_processes.txt 
+ 2136  jobs -l >> task4_processes.txt
+ 2137  bg %1
+ 2138  echo "--- After bg (resumed in background) ---" >> task4_processes.txt 
+ 2139  jobs -l
+ 2140  jobs -l >> task4_processes.txt
+ 2141  fg %1
+ 2142  bg %3
+ 2143  fg %3
+ 2144  echo "--- After terminating all sleep jobs ---" >> task4_processes.txt 
+ 2145  kill %3 %2 2>/dev/null
+ 2146  jobs -l
+ 2147  jobs -l >> task4_processes.txt
+ 2148  sleep 1000 &
+ 2149  SLEEP_PID=$!
+ 2150  echo "Started sleep with PID: $SLEEP_PID" >> task4_processes.txt 
+ 2151  echo "--- Available signals ---" >> task4_processes.txt
+ 2152  kill -l
+ 2153  kill -l >> task4_processes.txt 
+ 2154  kill -SIGSTOP $SLEEP_PID
+ 2155  echo "--- After SIGSTOP ---" >> task4_processes.txt 
+ 2156  ps -o pid,stat,cmd -p $SLEEP_PID >> task4_processes.txt
+ 2157  kill -SIGTERM $SLEEP_PID
+ 2158  echo "--- After SIGCONT ---" >> task4_processes.txt 
+ 2159  echo "--- nohup demo ---" >> task4_processes.txt 
+ 2160  nohup sleep 200 &
+ 2161  NOHUP_PID=$!
+ 2162  echo "nohup sleep PID: $NOHUP_PID" >> task4_processes.txt 
+ 2163  ls -la nohup.out >> task4_processes.txt 2>&1
+ 2164  kill $NOHUP_PID 2>/dev/null
+ 2165  echo "---Challenge Process Management ---" >> task4_processes.txt 
+ 2166  echo "=== 4a: Start sleep processes in background ===" >> task4_processes.txt
+ 2167  sleep 100 &
+ 2168  sleep 200 &
+ 2169  sleep 300 &
+ 2170  jobs -l >> task4_processes.txt
+ 2171  echo "" >> task4_processes.txt
+ 2172  echo "=== ps --forest output ===" >> task4_processes.txt
+ 2173  ps --forest -e | grep -A1 "sleep" >> task4_processes.txt
+ 2174  echo "" >> task4_processes.txt
+ 2175  echo "=== Killing all sleep processes ===" >> task4_processes.txt
+ 2176  pkill sleep && echo "All sleep processes killed" >> task4_processes.txt
+ 2177  echo "" >> task4_processes.txt
+ 2178  echo "=== 4b: bash PIDs via pgrep ===" >> task4_processes.txt
+ 2179  pgrep -a bash >> task4_processes.txt || echo "No bash process found" >> task4_processes.txt
+ 2180  top
+ 2181  echo "=== Task 5: Orphan & Zombie Processes ===" > task5_orphan_zombie.txt
+ 2182  nano orphan.c
+ 2183  gcc -o orphan orphan.c
+ 2184  ./orphan
+ 2185  nano zombie.c
+ 2186  gcc -o zombie zombie.c
+ 2187  ./zombie
+ 2188  ps --forest -e | grep -A5 "children"
+ 2189  echo "=== Full Command History ===" > task_history.txt
+ 2190  history | tail -n 100 >> task_history.txt
