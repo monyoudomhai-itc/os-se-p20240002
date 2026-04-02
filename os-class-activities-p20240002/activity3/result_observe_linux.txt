@@ -1,0 +1,5 @@
+monyoud+   13826    7428   13826  0    1 16:41 pts/2    00:00:00 grep --color=auto threads_observe
+    PID    SPID TTY          TIME CMD
+   7428    7428 pts/2    00:00:00 bash
+--- /proc/<PID>/task/ listing ---
+7428

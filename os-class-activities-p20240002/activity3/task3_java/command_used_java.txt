@@ -1,0 +1,30 @@
+ 1978  mkdir task2_threads
+ 1979  cd task2_threads/
+ 1980  nano threads.c
+ 1981  gcc -o threads threads.c -pthread
+ 1982  ./threads > result_threads.txt 2>&1
+ 1983  cat result_threads.txt 
+ 1984  nano threads_mutex.c
+ 1985  gcc -o threads_mutex threads_mutex.c -pthread
+ 1986  ./threads_mutex > result_threads_mutex.txt 2>&1
+ 1987  history | tail -n 20 > command_used_threads.txt
+ 1988  ./threads_mutex
+ 1989  cd ..
+ 1990  mkdir task3_java
+ 1991  cd task3_java/
+ 1992  nano ThreadDemo.java
+ 1993  javac ThreadDemo.java 
+ 1994  java ThreadDemo > result_thread_demo 2>&1
+ 1995  cat result_thread_demo.txt
+ 1996  java ThreadDemo > result_thread_demo.txt 2>&1
+ 1997  ls
+ 1998  sudo rm result_thread_demo
+ 1999  cat result_thread_demo.txt 
+ 2000  nano RunnableDemo.java
+ 2001  javac RunnableDemo.java
+ 2002  java RunnableDemo > result_runnable_demo.txt 2>&1
+ 2003  cat result_runnable_demo.txt 
+ 2004  nano PoolDemo.java
+ 2005  javac PoolDemo.java 
+ 2006  java PoolDemo > result_pool_demo.txt 2>&1
+ 2007  cat result_pool_demo.txt 

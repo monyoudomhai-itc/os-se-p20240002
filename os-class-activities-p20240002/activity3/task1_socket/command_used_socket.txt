@@ -1,0 +1,20 @@
+ 1963  g++ task5.cpp -o task5.out
+ 1964  ./task5.out
+ 1965  ./task4.out
+ 1966  mount_school 
+ 1967  ls
+ 1968  dna
+ 1969  ls
+ 1970  code .
+ 1971  sudo poweroff
+ 1972  mount_school 
+ 1973  sudo reboot
+ 1974  server_os 
+ 1975  cd os-se-p20240002/os-class-activities-p20240002/activity3/task1_socket/
+ 1976  ./server
+ 1977  ./server > result_server.txt 2>&1 &
+ 1978  sleep 1
+ 1979  ./client > result_client.txt 2>&1
+ 1980  wait
+ 1981  cat result_server.txt result_client.txt > result_socket.txt
+ 1982  history | tail -n 20 > command_used_socket.txt
